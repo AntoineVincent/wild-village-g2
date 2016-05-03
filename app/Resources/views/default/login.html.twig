@@ -1,3 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
 {% if error %}
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
@@ -16,3 +20,5 @@
 
     <input type="submit" id="_submit" name="_submit" value="Submit" />
 </form>
+
+{% endblock %}
