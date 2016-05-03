@@ -31,6 +31,7 @@ class datauser
     /**
      * @var int
      *
+     * @ORM\Column(name="iduser", type="integer", nullable=true)
      * @ORM\OneToOne(targetEntity="AppBundle\Entity\User", cascade={"persist"})
      */
     private $iduser;
