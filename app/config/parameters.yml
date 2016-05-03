@@ -4,7 +4,11 @@ parameters:
     database_port: null
     database_name: wildvillage
     database_user: root
+<<<<<<< HEAD
     database_password: Ageofsea-51
+=======
+    database_password: 12mai1980
+>>>>>>> 89469b78b9264ef09e9f807c3bb8efd75230f786
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null
