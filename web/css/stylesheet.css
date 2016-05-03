@@ -50,8 +50,8 @@ body{
 }
 .logoo{
 	background: url(../img/logomain.png);
-	background-size: 280px 280px;
-	height: 360px;
+	background-size: 240px 240px;
+	height: 290px;
 	background-position: center 0px;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -60,18 +60,18 @@ body{
 	width:33%;
 }
 .alpha {
-	padding-top: 285px;
+	padding-top: 240px;
 }
 p {
 	font-size: 17px;
 }
 .lineleft {
-	border-left: solid #3d3d3d 2px;
-	height: 250px;
+	
+	height: 330px;
 }
 .lineright {
-	border-right: solid #3d3d3d 2px;
-	height: 250px;
+	
+	height: 330px;
 }
 .buttonp {
 	text-align: center;
@@ -84,11 +84,17 @@ p {
 	height: 50px;
 	width: 100%;
 	background-color: #58c4b8;
-	margin-top: 100px;
+	margin-top: 5px;
 }
 a {
 	color: #3d3d3d ;
 }
 a:hover {
 	color: #3d3d3d;
+}
+.backico {
+	background: url(../img/ico.png);
+	background-repeat: no-repeat;
+	background-size: 100% 77%;
+	background-position: bottom;
 }
