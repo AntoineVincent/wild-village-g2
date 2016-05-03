@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 03 Mai 2016 à 14:08
+-- Généré le :  Mar 03 Mai 2016 à 14:16
 -- Version du serveur :  5.5.49-0ubuntu0.14.04.1
 -- Version de PHP :  5.5.9-1ubuntu4.16
 
@@ -32,13 +32,6 @@ CREATE TABLE `datauser` (
   `iduser` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
---
--- Contenu de la table `datauser`
---
-
-INSERT INTO `datauser` (`id`, `age`, `iduser`) VALUES
-(1, 25, 9);
-
 -- --------------------------------------------------------
 
 --
@@ -64,15 +57,6 @@ CREATE TABLE `fos_user` (
   `credentials_expired` tinyint(1) NOT NULL,
   `credentials_expire_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Contenu de la table `fos_user`
---
-
-INSERT INTO `fos_user` (`id`, `username`, `username_canonical`, `email`, `email_canonical`, `enabled`, `salt`, `password`, `last_login`, `locked`, `expired`, `expires_at`, `confirmation_token`, `password_requested_at`, `roles`, `credentials_expired`, `credentials_expire_at`) VALUES
-(8, 'azerty', 'azerty', 'test@gmail.com', 'test@gmail.com', 1, 'hmtn8m9elwgkowwosck8wcw00ggcw4w', '$2y$13$hmtn8m9elwgkowwosck8wOOfNHZYo8nP/svDZ4rPKMLRN9gO9CsA2', '2016-05-03 11:51:15', 0, 0, NULL, NULL, NULL, 'a:0:{}', 0, NULL),
-(9, 'test', 'test', 'atest@gmail.com', 'atest@gmail.com', 1, 'g6ao6f4s720w4oggw8440c4wggc84g8', '$2y$13$g6ao6f4s720w4oggw8440OHRe0IUTs4v5L4GB0EZ4JqZhH3a5aZeS', '2016-05-03 12:00:25', 0, 0, NULL, NULL, NULL, 'a:0:{}', 0, NULL),
-(10, 'john', 'john', 'johnsnw@gmail.com', 'johnsnw@gmail.com', 1, 'o9z22jtutasoksk8oc8kockggkk0sog', '$2y$13$o9z22jtutasoksk8oc8koOvKnXs7d4g.NaAyRxlj1J5JJFpJNou/i', '2016-05-03 12:01:54', 0, 0, NULL, NULL, NULL, 'a:0:{}', 0, NULL);
 
 --
 -- Index pour les tables exportées
