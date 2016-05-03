@@ -1,11 +1,12 @@
 /* NAVBAR */
 
 .navbar-default .navbar-brand {
-	color: #3d3d3d;
+	color: white;
+	font-size: 18px;
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #3d3d3d;
+	color: white;
 }
 
 .navbar {
@@ -13,12 +14,19 @@
 	color: white;
 }
 
+.logotage {
+	float: left;
+	margin-top: -5.5px;
+}
+
+
+
 /* FOOTER */
 footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 3%;
+	height: 5%;
 	background-color: #58c4b8;
 }
 
@@ -30,6 +38,7 @@ footer p {
 
 .text-muted {
 	color: #3d3d3d;
+	color: white;
 }
 
 /* index page */
