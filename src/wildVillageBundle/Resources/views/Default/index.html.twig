@@ -1,1 +1,31 @@
-Hello World!
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Bienvenue sur le Wild-Village{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/stylesheet.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 logoo">
+                <p class="alpha"> <strong>Le réseau des codeurs</strong></p>
+                <p><strong>sans chaussures</strong></p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 lineright">
+                <div class="buttonl"><p class="buttonp">Connectez-vous</p></div>
+            </div>
+            <div class="col-md-3 lineleft">
+                <div class="buttonr"><p class="buttonp">Inscrivez-vous</p></div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
