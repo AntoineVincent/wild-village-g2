@@ -21,20 +21,20 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_31356bea1a5c46bc2df36d060b1bc1b6ff1f2bc6a07b9199dea2a13400fe8293 = $this->env->getExtension("native_profiler");
-        $__internal_31356bea1a5c46bc2df36d060b1bc1b6ff1f2bc6a07b9199dea2a13400fe8293->enter($__internal_31356bea1a5c46bc2df36d060b1bc1b6ff1f2bc6a07b9199dea2a13400fe8293_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/register.html.twig"));
+        $__internal_00d770fa21a794ed7216257ad150acf4c86c5bf24478eb2678968963b2393f3b = $this->env->getExtension("native_profiler");
+        $__internal_00d770fa21a794ed7216257ad150acf4c86c5bf24478eb2678968963b2393f3b->enter($__internal_00d770fa21a794ed7216257ad150acf4c86c5bf24478eb2678968963b2393f3b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/register.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_31356bea1a5c46bc2df36d060b1bc1b6ff1f2bc6a07b9199dea2a13400fe8293->leave($__internal_31356bea1a5c46bc2df36d060b1bc1b6ff1f2bc6a07b9199dea2a13400fe8293_prof);
+        $__internal_00d770fa21a794ed7216257ad150acf4c86c5bf24478eb2678968963b2393f3b->leave($__internal_00d770fa21a794ed7216257ad150acf4c86c5bf24478eb2678968963b2393f3b_prof);
 
     }
 
     // line 3
     public function block_body($context, array $blocks = array())
     {
-        $__internal_646f6f367c1d90e215a557557269c05a284e79e71ecd30b7866f921188aa634f = $this->env->getExtension("native_profiler");
-        $__internal_646f6f367c1d90e215a557557269c05a284e79e71ecd30b7866f921188aa634f->enter($__internal_646f6f367c1d90e215a557557269c05a284e79e71ecd30b7866f921188aa634f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
+        $__internal_379f17b87799c7a5621d3210489b54bde36bc2711ef3ce8db2dbd352dc44b036 = $this->env->getExtension("native_profiler");
+        $__internal_379f17b87799c7a5621d3210489b54bde36bc2711ef3ce8db2dbd352dc44b036->enter($__internal_379f17b87799c7a5621d3210489b54bde36bc2711ef3ce8db2dbd352dc44b036_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
         echo "
@@ -63,17 +63,26 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
             </div>
         </div>
 
+        <div class=\"col-md-12 \">
+            <div class=\"col-md-6\">
+                Age :
+            </div>
+            <div class=\"col-md-6\">
+                <input type=\"number\" name=\"age\">
+            </div>
+        </div>
+
 <div class=\"col-md-12 register-form\">
         <div class=\"col-md-6\">
             Adresse E-mail :
         </div>
         <div class=\"col-md-6\">
             ";
-        // line 25
+        // line 34
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'widget');
         echo "
             ";
-        // line 26
+        // line 35
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "email", array()), 'errors');
         echo "
         </div>
@@ -85,11 +94,11 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
         </div>
         <div class=\"col-md-6\">
             ";
-        // line 35
+        // line 44
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "first", array()), 'widget');
         echo "
             ";
-        // line 36
+        // line 45
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "first", array()), 'errors');
         echo "
         </div>
@@ -101,11 +110,11 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
         </div>
         <div class=\"col-md-6\">
             ";
-        // line 45
+        // line 54
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "second", array()), 'widget');
         echo "
             ";
-        // line 46
+        // line 55
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "plainPassword", array()), "second", array()), 'errors');
         echo "
         </div>
@@ -113,12 +122,12 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
 
     <div class=\"col-md-12 register-but\">
         <input class=\"btn btn-success\" type=\"submit\" value=\"";
-        // line 51
+        // line 60
         echo twig_escape_filter($this->env, $this->env->getExtension('translator')->trans("registration.submit", array(), "FOSUserBundle"), "html", null, true);
         echo "\" />
     </div>
 ";
-        // line 53
+        // line 62
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
@@ -126,7 +135,7 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
 
 ";
         
-        $__internal_646f6f367c1d90e215a557557269c05a284e79e71ecd30b7866f921188aa634f->leave($__internal_646f6f367c1d90e215a557557269c05a284e79e71ecd30b7866f921188aa634f_prof);
+        $__internal_379f17b87799c7a5621d3210489b54bde36bc2711ef3ce8db2dbd352dc44b036->leave($__internal_379f17b87799c7a5621d3210489b54bde36bc2711ef3ce8db2dbd352dc44b036_prof);
 
     }
 
@@ -142,7 +151,7 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
 
     public function getDebugInfo()
     {
-        return array (  122 => 53,  117 => 51,  109 => 46,  105 => 45,  93 => 36,  89 => 35,  77 => 26,  73 => 25,  61 => 16,  57 => 15,  47 => 8,  43 => 6,  40 => 4,  34 => 3,  11 => 1,);
+        return array (  131 => 62,  126 => 60,  118 => 55,  114 => 54,  102 => 45,  98 => 44,  86 => 35,  82 => 34,  61 => 16,  57 => 15,  47 => 8,  43 => 6,  40 => 4,  34 => 3,  11 => 1,);
     }
 }
 /* {% extends 'base.html.twig' %}*/
@@ -161,6 +170,15 @@ class __TwigTemplate_b46a3ec7241518b616c2aa4c3eacd0baf7fdc117a8bba7a1040cb96ada5
 /*             <div class="col-md-6">*/
 /*                 {{ form_widget(form.username) }}*/
 /*                 {{ form_errors(form.username) }}*/
+/*             </div>*/
+/*         </div>*/
+/* */
+/*         <div class="col-md-12 ">*/
+/*             <div class="col-md-6">*/
+/*                 Age :*/
+/*             </div>*/
+/*             <div class="col-md-6">*/
+/*                 <input type="number" name="age">*/
 /*             </div>*/
 /*         </div>*/
 /* */
