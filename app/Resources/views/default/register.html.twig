@@ -4,63 +4,73 @@
 
 {% trans_default_domain 'FOSUserBundle' %}
 
-<div class="col-md-6 col-md-offset-6 register-div">
-    {{ form_start(form, {'method': 'post', 'action': path('user_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
 
-        <div class="col-md-12 ">
-            <div class="col-md-6">
-                Nom d'utilisateur :
-            </div>
-            <div class="col-md-6">
-                {{ form_widget(form.username) }}
-                {{ form_errors(form.username) }}
-            </div>
-        </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-2 wilders">
+        <img class="wilder" src="{{ asset('img/wilder2.png') }}">
+    </div>
+    <div class="col-md-3 col-md-offset-1 register-div">
+        <div class="formulaire">
+            {{ form_start(form, {'method': 'post', 'action': path('user_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
 
-        <div class="col-md-12 ">
-            <div class="col-md-6">
-                Age :
-            </div>
-            <div class="col-md-6">
-                <input type="number" name="age">
-            </div>
-        </div>
+                <div class="col-md-12 ecart pad">
+                    <div class="col-md-6">
+                        <p class="appel">Pseudo :</p>
+                    </div>
+                    <div class="col-md-6">
+                        {{ form_widget(form.username) }}
+                        {{ form_errors(form.username) }}
+                    </div>
+                </div>
 
-<div class="col-md-12 register-form">
-        <div class="col-md-6">
-            Adresse E-mail :
-        </div>
-        <div class="col-md-6">
-            {{ form_widget(form.email) }}
-            {{ form_errors(form.email) }}
+                <div class="col-md-12 ecart">
+                    <div class="col-md-6 a">
+                        <p class="appel">Age :</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" name="age">
+                    </div>
+                </div>
+
+        <div class="col-md-12 register-form ecart">
+                <div class="col-md-6 ">
+                    <p class="appel">Adresse E-mail :</p>
+                </div>
+                <div class="col-md-6">
+                    {{ form_widget(form.email) }}
+                    {{ form_errors(form.email) }}
+                </div>
+            </div>
+
+            <div class="col-md-12 register-form ecart">
+                <div class="col-md-6">
+                    <p class="appel">Mot de passe :</p>
+                </div>
+                <div class="col-md-6">
+                    {{ form_widget(form.plainPassword.first) }}
+                    {{ form_errors(form.plainPassword.first) }}
+                </div>
+            </div>
+
+            <div class="col-md-12 register-form ecart">
+                <div class="col-md-6">
+                    <p class="appel">Confirmation :</p>
+                </div>
+                <div class="col-md-6">
+                    {{ form_widget(form.plainPassword.second) }}
+                    {{ form_errors(form.plainPassword.second) }}
+                </div>
+            </div>
+            <div class="col-md-12 register-but">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 ">
+                    <input class="btn btn-success" type="submit" value="{{ 'registration.submit'|trans }}" />
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            {{ form_end(form) }}
         </div>
     </div>
 
-    <div class="col-md-12 register-form">
-        <div class="col-md-6">
-            Mot de passe :
-        </div>
-        <div class="col-md-6">
-            {{ form_widget(form.plainPassword.first) }}
-            {{ form_errors(form.plainPassword.first) }}
-        </div>
-    </div>
-
-    <div class="col-md-12 register-form">
-        <div class="col-md-6">
-            Confirmation :
-        </div>
-        <div class="col-md-6">
-            {{ form_widget(form.plainPassword.second) }}
-            {{ form_errors(form.plainPassword.second) }}
-        </div>
-    </div>
-
-    <div class="col-md-12 register-but">
-        <input class="btn btn-success" type="submit" value="{{ 'registration.submit'|trans }}" />
-    </div>
-{{ form_end(form) }}
-
-</div>
 
 {% endblock %}

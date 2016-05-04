@@ -98,3 +98,44 @@ a:hover {
 	background-size: 100% 77%;
 	background-position: bottom;
 }
+
+/* Register-page */
+.btn {
+	background-color: white;
+	border-color: white;
+	margin-bottom: -100px;
+	color: #3d3d3d;
+}
+.btn:hover{
+	color: white;
+	background-color: #3d3d3d;
+	border:solid white 1px;
+}
+.ecart {
+	margin-bottom:10px;
+	padding-right: 50px;
+}
+.wilders {
+	height: 500px;
+	width: 180px;
+	border: transparent;
+}
+.wilder {
+	height: 100%;
+	width: 100%;
+	border: transparent;
+}
+.formulaire {
+	height: 400px;
+	width: 400px;
+	background-color: #58c4b8;
+	color: #3d3d3d;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+.pad {
+	padding-top: 60px;
+}
+.appel {
+	color: white;
+}
