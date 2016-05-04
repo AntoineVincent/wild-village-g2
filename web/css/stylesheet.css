@@ -50,7 +50,7 @@ body{
 }
 .logoo{
 	background: url(../img/logomain.png);
-	background-size: 240px 240px;
+	background-size: 210px 260px;
 	height: 290px;
 	background-position: center 0px;
 	background-repeat: no-repeat;
@@ -60,7 +60,7 @@ body{
 	width:33%;
 }
 .alpha {
-	padding-top: 240px;
+	padding-top: 260px;
 }
 p {
 	font-size: 17px;
@@ -140,12 +140,19 @@ a:hover {
 	color: white;
 }
 
+.colog {
+	color: white;
+	text-align: center;
+
+}
 
 /* Espace perso */
 
 h3 {
 	color: #58c4b8;
 }
+
+
 
 .btn-espace {
 	margin-bottom: 0;
@@ -158,6 +165,7 @@ h3 {
 	border-bottom: solid 1px grey
 }
 
+
 .post_perso b {
 	margin-left: 5px;
 }
@@ -168,8 +176,8 @@ h3 {
 
 .profil h3 {
 	color: white; 
+}	
 
-}
 
 /* Login-page */
 .logform {
