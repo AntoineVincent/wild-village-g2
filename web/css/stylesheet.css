@@ -139,7 +139,7 @@ a:hover {
 .appel {
 	color: white;
 }
-<<<<<<< HEAD
+
 
 /* Espace perso */
 
@@ -149,7 +149,7 @@ h3 {
 
 .btn-espace {
 	margin-bottom: 0;
-	margin-top: -60px;
+	margin-top: 20px;
 	background: #58c4b8;
 	color: white;
 }
@@ -157,11 +157,20 @@ h3 {
 .post_perso {
 	border-bottom: solid 1px grey
 }
-=======
-h3 {
-	color: white;
-	text-align: center;
+
+.post_perso b {
+	margin-left: 5px;
 }
+
+.profil {
+	background-color: #58c4b8; 
+}
+
+.profil h3 {
+	color: white; 
+
+}
+
 /* Login-page */
 .logform {
 	background-color: #58c4b8;
@@ -196,4 +205,4 @@ span {
 	background-color: #3d3d3d;
 	border:solid white 1px;
 }
->>>>>>> d7caf96247e4667b3d81f08a59a73c583b429602
+
