@@ -143,6 +143,21 @@ a:hover {
 	color: white;
 	text-align: center;
 }
+
+.btn-espace {
+	margin-bottom: 0;
+	margin-top: -60px;
+	background: #58c4b8;
+	color: white;
+}
+
+.post_perso {
+	border-bottom: solid 1px grey
+}
+h3 {
+	color: #58c4b8;
+	text-align: center;
+}
 /* Login-page */
 .logform {
 	background-color: #58c4b8;

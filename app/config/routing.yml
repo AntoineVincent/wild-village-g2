@@ -18,3 +18,6 @@ user_login:
     path:     /user/login
     defaults: { _controller: AppBundle:Security:login }
 
+user_espace:
+    path:     /user/espace
+    defaults: { _controller: AppBundle:Espace:espace } 
