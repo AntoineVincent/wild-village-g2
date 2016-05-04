@@ -134,11 +134,12 @@ a:hover {
 	margin-top: 50px;
 }
 .pad {
-	padding-top: 60px;
+	padding-top: 10px;
 }
 .appel {
 	color: white;
 }
+<<<<<<< HEAD
 
 /* Espace perso */
 
@@ -156,3 +157,43 @@ h3 {
 .post_perso {
 	border-bottom: solid 1px grey
 }
+=======
+h3 {
+	color: white;
+	text-align: center;
+}
+/* Login-page */
+.logform {
+	background-color: #58c4b8;
+	height: 300px;
+	width: 400px;
+	color: #3d3d3d;
+	border-radius: 5px;
+	margin-top: 50px;
+}
+.tilti {
+	text-align: center;
+}
+.padd {
+	padding-top: 10px;
+	margin-bottom: 20px;
+}
+.ecartt {
+	padding-bottom: 15px;
+}
+span {
+	color: white;
+}
+.btnlogin {
+	background-color: white;
+	border-color: white;
+	margin-bottom: -100px;
+	color: #3d3d3d;
+	border-radius: 5px;
+}
+.btnlogin:hover{
+	color: white;
+	background-color: #3d3d3d;
+	border:solid white 1px;
+}
+>>>>>>> d7caf96247e4667b3d81f08a59a73c583b429602
