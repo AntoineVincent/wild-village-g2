@@ -163,11 +163,14 @@ h3 {
 	color: #58c4b8;
 }
 
-
+.img_profil {
+	margin-top: -30px;
+}
 
 .btn-espace {
 	margin-bottom: 0;
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-left: 25px;
 	background: #58c4b8;
 	color: white;
 }
@@ -187,7 +190,31 @@ h3 {
 
 .profil h3 {
 	color: white; 
-}	
+}
+
+.profil img {
+	margin-left: 45px;
+}
+
+.bulle_ami {
+	margin-top: 0px;
+	width : 50px;
+	height: 40px;
+	font-size: 25px;
+	border: solid 2px grey;
+	border-radius: 10px;
+	text-align: center;
+	background: #58c4b8;
+}
+
+.bulle_ami a {
+	text-decoration: none;
+	color: white;
+}
+
+.titre_ami h3	{
+	margin-top: -10px;
+}
 
 
 /* Login-page */
