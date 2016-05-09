@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="col-md-4"></div>
+	<div class="col-md-4 rslt-bgrd">
+		<img class="profilerwilder" src="{{ asset('img/deer_small.png') }}">
+		{% for search in search_result %}
+			<p class="rslt-search">Pseudo : {{ search.username }}</p>
+			<p class="rslt-search">Derniere connexion: {{ search.lastlogin|date('d-m-Y') }}</p>
+		{% endfor %}
+		<p class="btn-profiler"><a href="" class="link-profiler">Voir Profil</a></p>
+	</div>
+	<div class="col-md-4"></div>
+
+{% endblock %}
