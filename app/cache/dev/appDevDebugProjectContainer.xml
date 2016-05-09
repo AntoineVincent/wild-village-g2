@@ -2193,7 +2193,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>572a1b20b05329.52052882</argument>
+            <argument>573044b9a70061.55113199</argument>
           </service>
         </argument>
       </argument>
@@ -2431,9 +2431,9 @@
                 <argument type="collection"/>
                 <call method="setOptions">
                   <argument type="collection">
+                    <argument key="login_path">user_login</argument>
+                    <argument key="default_target_path">user_flux</argument>
                     <argument key="always_use_default_target_path">false</argument>
-                    <argument key="default_target_path">/</argument>
-                    <argument key="login_path">/login</argument>
                     <argument key="target_path_parameter">_target_path</argument>
                     <argument key="use_referer">false</argument>
                   </argument>
@@ -2456,7 +2456,7 @@
                 <argument type="service" id="monolog.logger.security" on-invalid="null"/>
                 <call method="setOptions">
                   <argument type="collection">
-                    <argument key="login_path">/login</argument>
+                    <argument key="login_path">user_login</argument>
                     <argument key="failure_path">null</argument>
                     <argument key="failure_forward">false</argument>
                     <argument key="failure_path_parameter">_failure_path</argument>
@@ -2465,7 +2465,7 @@
               </service>
             </argument>
             <argument type="collection">
-              <argument key="check_path">/login_check</argument>
+              <argument key="check_path">user_login_check</argument>
               <argument key="use_forward">false</argument>
               <argument key="require_previous_session">true</argument>
               <argument key="username_parameter">_username</argument>
@@ -2482,7 +2482,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>572a1b20b05329.52052882</argument>
+            <argument>573044b9a70061.55113199</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2564,7 +2564,7 @@
                   <argument type="service" id="router" on-invalid="null"/>
                 </service>
               </argument>
-              <argument>/login</argument>
+              <argument>user_login</argument>
               <argument>false</argument>
             </service>
           </argument>

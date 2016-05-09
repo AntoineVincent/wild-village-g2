@@ -120,7 +120,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->redirect($pathinfo.'/', 'homepage');
             }
 
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+            return array (  '_controller' => 'AppBundle\\Controller\\FluxController::fluxAction',  '_route' => 'homepage',);
         }
 
         if (0 === strpos($pathinfo, '/log')) {
@@ -315,14 +315,27 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'AppBundle\\Controller\\RegistrationController::registerAction',  '_route' => 'user_register',);
             }
 
-            // user_login
-            if ($pathinfo === '/user/login') {
-                return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::loginAction',  '_route' => 'user_login',);
+            if (0 === strpos($pathinfo, '/user/login')) {
+                // user_login
+                if ($pathinfo === '/user/login') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::loginAction',  '_route' => 'user_login',);
+                }
+
+                // user_login_check
+                if ($pathinfo === '/user/login/check') {
+                    return array (  '_controller' => 'AppBundle\\Controller\\SecurityController::checkAction',  '_route' => 'user_login_check',);
+                }
+
             }
 
             // user_espace
             if ($pathinfo === '/user/espace') {
                 return array (  '_controller' => 'AppBundle\\Controller\\EspaceController::espaceAction',  '_route' => 'user_espace',);
+            }
+
+            // user_flux
+            if ($pathinfo === '/user/flux') {
+                return array (  '_controller' => 'AppBundle\\Controller\\FluxController::fluxAction',  '_route' => 'user_flux',);
             }
 
         }

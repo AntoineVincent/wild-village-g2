@@ -30,10 +30,11 @@
       
       
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ path('user_flux') }}">Flux</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Mon espace</a></li>
+            <li><a href="{{ path('user_espace') }}">Mon espace</a></li>
             <li><a href="#">Messagerie</a></li>
             <li><a href="#">Mes paramètres</a></li>
             <li role="separator" class="divider"></li>
@@ -51,8 +52,33 @@
 
  <!-- FOOTER -->
  <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Site développé par le G2 de la Wild Code School</p>
+      <div class="col-md-4">
+        <p class="text-muted">Site développé par les élèves de la Wild Code School</p>
+      </div>
+      <div class="col-md-8 social">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 a">
+                <a href="https://www.facebook.com/wildcodeschool" target="_blank">
+                  <img class="typemarge" src="{{ asset('img/social/facebook.svg') }}
+                    " alt="Facebook - Wild Code School">
+                </a>
+                <a href="https://twitter.com/wildcodeschool" target="_blank">
+                  <img src="{{ asset('img/social/twitter.svg') }}" alt="Twitter - Wild Code School">
+                </a>
+                <a href="https://www.instagram.com/wildcodeschool/" target="_blank">
+                  <img src="{{ asset('img/social/instagram.svg') }}" alt="Instagram - Wild Code School">
+                </a>
+                <a href="https://fr.linkedin.com/edu/wild-code-school-192048" target="_blank">
+                  <img src="{{ asset('img/social/linkedin.svg') }}" alt="Linkedin - Wild Code School">
+                </a>
+                <a href="https://github.com/WildCodeSchool" target="_blank">
+                  <img src="{{ asset('img/social/github.svg') }}" alt="Github - Wild Code School">
+                </a>
+                <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank">
+                  <img src="{{ asset('img/social/youtube.svg') }}" alt="Youtube - Wild Code School">
+                </a>
+        </div>
+        
       </div>
 </footer>
  <!-- FOOTER END -->       

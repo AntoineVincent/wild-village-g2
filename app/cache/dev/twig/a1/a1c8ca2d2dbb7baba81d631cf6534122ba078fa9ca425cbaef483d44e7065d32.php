@@ -18,8 +18,8 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_d9fecd813c98303606f22ed3d9c2f847d1bdd9439fca8a449ed45f4e472ad054 = $this->env->getExtension("native_profiler");
-        $__internal_d9fecd813c98303606f22ed3d9c2f847d1bdd9439fca8a449ed45f4e472ad054->enter($__internal_d9fecd813c98303606f22ed3d9c2f847d1bdd9439fca8a449ed45f4e472ad054_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
+        $__internal_ee4b18a2976834b5076208c6f3d59c1febdf1bccf1ea7b1aba00d16ed0a61565 = $this->env->getExtension("native_profiler");
+        $__internal_ee4b18a2976834b5076208c6f3d59c1febdf1bccf1ea7b1aba00d16ed0a61565->enter($__internal_ee4b18a2976834b5076208c6f3d59c1febdf1bccf1ea7b1aba00d16ed0a61565_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "base.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -75,15 +75,22 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
       
       
       <ul class=\"nav navbar-nav navbar-right\">
+        <li><a href=\"";
+        // line 33
+        echo $this->env->getExtension('routing')->getPath("user_flux");
+        echo "\">Flux</a></li>
         <li class=\"dropdown\">
           <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Menu <span class=\"caret\"></span></a>
           <ul class=\"dropdown-menu\" role=\"menu\">
-            <li><a href=\"#\">Mon espace</a></li>
+            <li><a href=\"";
+        // line 37
+        echo $this->env->getExtension('routing')->getPath("user_espace");
+        echo "\">Mon espace</a></li>
             <li><a href=\"#\">Messagerie</a></li>
             <li><a href=\"#\">Mes paramètres</a></li>
             <li role=\"separator\" class=\"divider\"></li>
             <li><a href=\"";
-        // line 40
+        // line 41
         echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
         echo "\" >Se déconnecter</a></li>
           </ul>
@@ -95,17 +102,60 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 <!-- END NAVBAR -->
 
         ";
-        // line 49
-        $this->displayBlock('body', $context, $blocks);
         // line 50
+        $this->displayBlock('body', $context, $blocks);
+        // line 51
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 51
+        // line 52
         echo "
  <!-- FOOTER -->
  <footer class=\"footer\">
-      <div class=\"container\">
-        <p class=\"text-muted\">Site développé par le G2 de la Wild Code School</p>
+      <div class=\"col-md-4\">
+        <p class=\"text-muted\">Site développé par les élèves de la Wild Code School</p>
+      </div>
+      <div class=\"col-md-8 social\">
+        <div class=\"col-md-3\"></div>
+        <div class=\"col-md-6 a\">
+                <a href=\"https://www.facebook.com/wildcodeschool\" target=\"_blank\">
+                  <img class=\"typemarge\" src=\"";
+        // line 62
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/facebook.svg"), "html", null, true);
+        echo "
+                    \" alt=\"Facebook - Wild Code School\">
+                </a>
+                <a href=\"https://twitter.com/wildcodeschool\" target=\"_blank\">
+                  <img src=\"";
+        // line 66
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/twitter.svg"), "html", null, true);
+        echo "\" alt=\"Twitter - Wild Code School\">
+                </a>
+                <a href=\"https://www.instagram.com/wildcodeschool/\" target=\"_blank\">
+                  <img src=\"";
+        // line 69
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/instagram.svg"), "html", null, true);
+        echo "\" alt=\"Instagram - Wild Code School\">
+                </a>
+                <a href=\"https://fr.linkedin.com/edu/wild-code-school-192048\" target=\"_blank\">
+                  <img src=\"";
+        // line 72
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/linkedin.svg"), "html", null, true);
+        echo "\" alt=\"Linkedin - Wild Code School\">
+                </a>
+                <a href=\"https://github.com/WildCodeSchool\" target=\"_blank\">
+                  <img src=\"";
+        // line 75
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/github.svg"), "html", null, true);
+        echo "\" alt=\"Github - Wild Code School\">
+                </a>
+                <a href=\"https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw\" target=\"_blank\">
+                  <img src=\"";
+        // line 78
+        echo twig_escape_filter($this->env, $this->env->getExtension('asset')->getAssetUrl("img/social/youtube.svg"), "html", null, true);
+        echo "\" alt=\"Youtube - Wild Code School\">
+                </a>
+        </div>
+        
       </div>
 </footer>
  <!-- FOOTER END -->       
@@ -113,41 +163,41 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 </html>
 ";
         
-        $__internal_d9fecd813c98303606f22ed3d9c2f847d1bdd9439fca8a449ed45f4e472ad054->leave($__internal_d9fecd813c98303606f22ed3d9c2f847d1bdd9439fca8a449ed45f4e472ad054_prof);
+        $__internal_ee4b18a2976834b5076208c6f3d59c1febdf1bccf1ea7b1aba00d16ed0a61565->leave($__internal_ee4b18a2976834b5076208c6f3d59c1febdf1bccf1ea7b1aba00d16ed0a61565_prof);
 
     }
 
     // line 5
     public function block_title($context, array $blocks = array())
     {
-        $__internal_a4d14c7c013f77e284bb4a7d9dc0ff14e47f07d3dc6426d09f5c9d5c2b035a8f = $this->env->getExtension("native_profiler");
-        $__internal_a4d14c7c013f77e284bb4a7d9dc0ff14e47f07d3dc6426d09f5c9d5c2b035a8f->enter($__internal_a4d14c7c013f77e284bb4a7d9dc0ff14e47f07d3dc6426d09f5c9d5c2b035a8f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_ab32edec3c3b020da3026bc6f871055e2a923c6e2def4b123911f9232f189e17 = $this->env->getExtension("native_profiler");
+        $__internal_ab32edec3c3b020da3026bc6f871055e2a923c6e2def4b123911f9232f189e17->enter($__internal_ab32edec3c3b020da3026bc6f871055e2a923c6e2def4b123911f9232f189e17_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         echo "Welcome!";
         
-        $__internal_a4d14c7c013f77e284bb4a7d9dc0ff14e47f07d3dc6426d09f5c9d5c2b035a8f->leave($__internal_a4d14c7c013f77e284bb4a7d9dc0ff14e47f07d3dc6426d09f5c9d5c2b035a8f_prof);
-
-    }
-
-    // line 49
-    public function block_body($context, array $blocks = array())
-    {
-        $__internal_a21c5a39d191ced519a09cb5e0e82f21202477cd098818a0ef07e83cb7ba7b77 = $this->env->getExtension("native_profiler");
-        $__internal_a21c5a39d191ced519a09cb5e0e82f21202477cd098818a0ef07e83cb7ba7b77->enter($__internal_a21c5a39d191ced519a09cb5e0e82f21202477cd098818a0ef07e83cb7ba7b77_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
-
-        
-        $__internal_a21c5a39d191ced519a09cb5e0e82f21202477cd098818a0ef07e83cb7ba7b77->leave($__internal_a21c5a39d191ced519a09cb5e0e82f21202477cd098818a0ef07e83cb7ba7b77_prof);
+        $__internal_ab32edec3c3b020da3026bc6f871055e2a923c6e2def4b123911f9232f189e17->leave($__internal_ab32edec3c3b020da3026bc6f871055e2a923c6e2def4b123911f9232f189e17_prof);
 
     }
 
     // line 50
-    public function block_javascripts($context, array $blocks = array())
+    public function block_body($context, array $blocks = array())
     {
-        $__internal_5c6a0415c63fd77287a4a52d277f0699c8b0805bf12fafd55217dc2ddce12c8e = $this->env->getExtension("native_profiler");
-        $__internal_5c6a0415c63fd77287a4a52d277f0699c8b0805bf12fafd55217dc2ddce12c8e->enter($__internal_5c6a0415c63fd77287a4a52d277f0699c8b0805bf12fafd55217dc2ddce12c8e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_14707c00d7c050abd8a69cbcfa1380b7f589ca263d501dc4bee17b139679e6e8 = $this->env->getExtension("native_profiler");
+        $__internal_14707c00d7c050abd8a69cbcfa1380b7f589ca263d501dc4bee17b139679e6e8->enter($__internal_14707c00d7c050abd8a69cbcfa1380b7f589ca263d501dc4bee17b139679e6e8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         
-        $__internal_5c6a0415c63fd77287a4a52d277f0699c8b0805bf12fafd55217dc2ddce12c8e->leave($__internal_5c6a0415c63fd77287a4a52d277f0699c8b0805bf12fafd55217dc2ddce12c8e_prof);
+        $__internal_14707c00d7c050abd8a69cbcfa1380b7f589ca263d501dc4bee17b139679e6e8->leave($__internal_14707c00d7c050abd8a69cbcfa1380b7f589ca263d501dc4bee17b139679e6e8_prof);
+
+    }
+
+    // line 51
+    public function block_javascripts($context, array $blocks = array())
+    {
+        $__internal_fd472e745ac0011e77130069657b5aee3e80a78f55027c91b5d81f814d5c82b0 = $this->env->getExtension("native_profiler");
+        $__internal_fd472e745ac0011e77130069657b5aee3e80a78f55027c91b5d81f814d5c82b0->enter($__internal_fd472e745ac0011e77130069657b5aee3e80a78f55027c91b5d81f814d5c82b0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
+
+        
+        $__internal_fd472e745ac0011e77130069657b5aee3e80a78f55027c91b5d81f814d5c82b0->leave($__internal_fd472e745ac0011e77130069657b5aee3e80a78f55027c91b5d81f814d5c82b0_prof);
 
     }
 
@@ -163,7 +213,7 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 
     public function getDebugInfo()
     {
-        return array (  144 => 50,  133 => 49,  121 => 5,  104 => 51,  101 => 50,  99 => 49,  87 => 40,  69 => 25,  51 => 10,  47 => 9,  43 => 8,  39 => 7,  35 => 6,  31 => 5,  25 => 1,);
+        return array (  194 => 51,  183 => 50,  171 => 5,  154 => 78,  148 => 75,  142 => 72,  136 => 69,  130 => 66,  123 => 62,  111 => 52,  108 => 51,  106 => 50,  94 => 41,  87 => 37,  80 => 33,  69 => 25,  51 => 10,  47 => 9,  43 => 8,  39 => 7,  35 => 6,  31 => 5,  25 => 1,);
     }
 }
 /* <!DOCTYPE html>*/
@@ -198,10 +248,11 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 /*       */
 /*       */
 /*       <ul class="nav navbar-nav navbar-right">*/
+/*         <li><a href="{{ path('user_flux') }}">Flux</a></li>*/
 /*         <li class="dropdown">*/
 /*           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>*/
 /*           <ul class="dropdown-menu" role="menu">*/
-/*             <li><a href="#">Mon espace</a></li>*/
+/*             <li><a href="{{ path('user_espace') }}">Mon espace</a></li>*/
 /*             <li><a href="#">Messagerie</a></li>*/
 /*             <li><a href="#">Mes paramètres</a></li>*/
 /*             <li role="separator" class="divider"></li>*/
@@ -219,8 +270,33 @@ class __TwigTemplate_8a3f00eb4e7c1c354dc7bdd20254c5c5f55c752d6fa19d981a2029b6935
 /* */
 /*  <!-- FOOTER -->*/
 /*  <footer class="footer">*/
-/*       <div class="container">*/
-/*         <p class="text-muted">Site développé par le G2 de la Wild Code School</p>*/
+/*       <div class="col-md-4">*/
+/*         <p class="text-muted">Site développé par les élèves de la Wild Code School</p>*/
+/*       </div>*/
+/*       <div class="col-md-8 social">*/
+/*         <div class="col-md-3"></div>*/
+/*         <div class="col-md-6 a">*/
+/*                 <a href="https://www.facebook.com/wildcodeschool" target="_blank">*/
+/*                   <img class="typemarge" src="{{ asset('img/social/facebook.svg') }}*/
+/*                     " alt="Facebook - Wild Code School">*/
+/*                 </a>*/
+/*                 <a href="https://twitter.com/wildcodeschool" target="_blank">*/
+/*                   <img src="{{ asset('img/social/twitter.svg') }}" alt="Twitter - Wild Code School">*/
+/*                 </a>*/
+/*                 <a href="https://www.instagram.com/wildcodeschool/" target="_blank">*/
+/*                   <img src="{{ asset('img/social/instagram.svg') }}" alt="Instagram - Wild Code School">*/
+/*                 </a>*/
+/*                 <a href="https://fr.linkedin.com/edu/wild-code-school-192048" target="_blank">*/
+/*                   <img src="{{ asset('img/social/linkedin.svg') }}" alt="Linkedin - Wild Code School">*/
+/*                 </a>*/
+/*                 <a href="https://github.com/WildCodeSchool" target="_blank">*/
+/*                   <img src="{{ asset('img/social/github.svg') }}" alt="Github - Wild Code School">*/
+/*                 </a>*/
+/*                 <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank">*/
+/*                   <img src="{{ asset('img/social/youtube.svg') }}" alt="Youtube - Wild Code School">*/
+/*                 </a>*/
+/*         </div>*/
+/*         */
 /*       </div>*/
 /* </footer>*/
 /*  <!-- FOOTER END -->       */
