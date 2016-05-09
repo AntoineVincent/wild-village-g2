@@ -2,16 +2,16 @@
 
 
 {% block body %}
-<div class="col-md-12">Bienvenue sur votre espace personnel {{ '' }}</div>
+<div class="col-md-12">Bienvenue sur votre espace personnel {{ app.user.username }}</div>
 <div class="col-md-12">
 	<div class="col-md-3 profil">
 		<h3>MON PROFIL</h3>
 			<h4>Ma biographie</h4><br>
 			<h4>Nom</h4>
 			<h4>Prénom</h4>
-			<h4>Age</h4>
-			<h4>Adresse email</h4><br>
-		<h3>LIENS PRO</h3>
+			<h4> {{ app.user.email }} </h4>
+			<h4> {{ requete_age.age }} ans</h4><br>
+		<div class="titre-pro"><h3>LIENS PRO</h3></div>
 			<h4>Site personnel</h4>
 			<h4>Github</h4>
 			<h4>Linkedin</h4>
@@ -38,10 +38,16 @@
 			</div>
 		</div>
 	<div class="col-md-2">
-		<a class="btn btn-primary btn-espace" href="#" role="button">Modifier votre profil</a>
+		<div class="img_profil"><img src="{{ asset('img/deer_small.png') }}"></div>
+		<a class="btn btn-primary btn-espace" href="{{ path ("user_espacemodif") }}" role="button">Modifier votre profil</a>
 	</div>
 </div>
-<div class="col-md-5"></div>
-<div class="col-md-2 center-block"><h3>MES AMIS</h3></div>
-<div class="col-md-5"></div>
+<div class="col-md-12">
+	<div class="col-md-5"></div>
+	<div class="col-md-2 center-block titre_ami"><h3>MES AMIS</h3></div>
+	<div class="col-md-5"></div>
+</div>
+<div class="col-md-12">
+	<div class="bulle_ami"><a href="#" alt="L Dupont">L.D</a></div>	
+</div>
 {% endblock %}

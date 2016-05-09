@@ -18,7 +18,10 @@
 	float: left;
 	margin-top: -5.5px;
 }
-
+.inline-form input{
+  display: inline-block ;
+  width: 200px !important;
+}
 
 
 /* FOOTER */
@@ -40,7 +43,6 @@ footer p {
 	color: #3d3d3d;
 	color: white;
 	padding-top: 5px;
-	text-align: center;
 }
 .a img {
     width: 60px;
@@ -109,12 +111,10 @@ a:hover {
 	background-size: 100% 77%;
 	background-position: bottom;
 }
-
 /* Register-page */
 .btn {
 	background-color: white;
 	border-color: white;
-	margin-bottom: -100px;
 	color: #3d3d3d;
 }
 .btn:hover{
@@ -163,11 +163,14 @@ h3 {
 	color: #58c4b8;
 }
 
-
+.img_profil {
+	margin-top: -30px;
+}
 
 .btn-espace {
 	margin-bottom: 0;
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-left: 25px;
 	background: #58c4b8;
 	color: white;
 }
@@ -187,8 +190,35 @@ h3 {
 
 .profil h3 {
 	color: white; 
-}	
+}
 
+.profil img {
+	margin-left: 45px;
+}
+
+.bulle_ami {
+	margin-top: 0px;
+	width : 50px;
+	height: 40px;
+	font-size: 25px;
+	border: solid 2px grey;
+	border-radius: 10px;
+	text-align: center;
+	background: #58c4b8;
+}
+
+.bulle_ami a {
+	text-decoration: none;
+	color: white;
+}
+
+.titre_ami h3	{
+	margin-top: -10px;
+}
+
+.titre-pro h3 {
+	margin-top: -15px;
+}
 
 /* Login-page */
 .logform {
@@ -229,6 +259,7 @@ span {
 	text-align: center;
 	color: #3d3d3d;
 }
+
 
 /* MESSAGERIE */
 
@@ -276,4 +307,31 @@ margin-bottom: 30px;
 	list-style: none;
 }
 
-
+/* Search Page */
+.rslt-search {
+	color: #3d3d3d;
+	text-align: center;
+}
+.rslt-bgrd {
+	background-color: #58c4b8;
+	border-radius: 5px;
+	height: 230px;
+}
+.profilerwilder {
+	float: left;
+}
+.btn-profiler {
+	text-align: center;
+}
+.link-profiler{
+	background-color: white;
+	border-radius: 5px;
+	color: #3d3d3d;
+	padding: 5px;
+	border: solid #3d3d3d 1px;
+}
+.link-profiler:hover {
+	background-color: #3d3d3d;
+	color: white;
+	text-decoration: none;
+}

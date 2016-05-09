@@ -8,14 +8,19 @@ use Symfony\Component\HttpFoundation\Request;
 
 class DefaultController extends Controller
 {
-    /**
-     * @Route("/", name="homepage")
-     */
-    public function indexAction(Request $request)
+    public function searchAction(Request $request)
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', array(
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
+        $em = $this->getDoctrine()->getManager();
+
+        $user = $this->container->get('security.context')->getToken()->getUser();
+
+        $search = $request->request->get('recherche');
+
+        $searchresult = $em->getRepository('AppBundle:User')->findByUsername($search);
+
+        return $this->render('default/search.html.twig', array(
+            'search_result' => $searchresult,
         ));
     }
+
 }
