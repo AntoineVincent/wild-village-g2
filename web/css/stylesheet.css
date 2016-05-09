@@ -216,6 +216,9 @@ h3 {
 	margin-top: -10px;
 }
 
+.titre-pro h3 {
+	margin-top: -15px;
+}
 
 /* Login-page */
 .logform {

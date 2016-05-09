@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="col-md-12">{{ app.user.username }} vous pouvez modifier vos informations ici.</div>
+<div class="col-md-12">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<form action="{{ path("user_espacemodif") }}" method="post" class="espace_modif">
+			<div class="col-md-12">
+				<label for="username">Pseudo :</label>
+				<input type="text" id="username" name="_username" value="{{ app.user.username }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="nom">Nom :</label>
+				<input type="string" id="nom" name="nom" value="{{ requete_infos.nom }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="prenom">Prenom :</label>
+				<input type="string" id="prenom" name="_prenom" value="{{ requete_infos.prenom }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="age">Age :</label>
+				<input type="integer" id="age" name="_age" value="{{ requete_infos.age }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="email">Email :</label>
+				<input type="string" id="email" name="_email" value="{{ app.user.email }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="biographie">Biographie :</label>
+				<input type="text" id="biographie" name="_biographie" value="{{ requete_infos.biographie }}"/>
+			</div><br>
+			<div class="col-md-12">
+				<label for="site">Site personnel :</label>
+				<input type="string" id="site" name="_site" value="{{ requete_infos.site }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="github">Github :</label>
+				<input type="string" id="github" name="_github" value="{{ requete_infos.github }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="linkedin">Linkedin :</label>
+				<input type="string" id="linkedin" name="_linkedin" value="{{ requete_infos.linkedin }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="tweeter">Tweeter :</label>
+				<input type="string" id="tweeter" name="_tweeter" value="{{ requete_infos.tweeter }}"/>
+			</div>
+			<div class="col-md-12">
+				<label for="doyoubuz">Doyoubuzz :</label>
+				<input type="string" id="doyoubuzz" name="_doyoujbuzz" value="{{ requete_infos.doyoubuzz }}"/>
+			</div>
+			<div class="col-md-12">
+				<input type="submit" class="btnlogin" id="_submit" name="_submit" value="Envoyer" />
+			</div>
+		</form>
+	</div>
+	<div class="col-md-3"></div>	
+</div>
+{% endblock %}

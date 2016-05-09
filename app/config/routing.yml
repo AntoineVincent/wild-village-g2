@@ -30,6 +30,10 @@ user_flux:
     path:     /user/flux
     defaults: { _controller: AppBundle:Flux:flux }
 
+user_espacemodif:
+    path:     /user/espacemodif
+    defaults: { _controller: AppBundle:Espacemodif:espacemodif } 
+       
 user_search:
     path:    /user/search
     defaults: { _controller: AppBundle:Default:search }

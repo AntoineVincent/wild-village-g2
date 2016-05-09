@@ -2,16 +2,16 @@
 
 
 {% block body %}
-<div class="col-md-12">Bienvenue sur votre espace personnel {{ '' }}</div>
+<div class="col-md-12">Bienvenue sur votre espace personnel {{ app.user.username }}</div>
 <div class="col-md-12">
 	<div class="col-md-3 profil">
 		<h3>MON PROFIL</h3>
 			<h4>Ma biographie</h4><br>
 			<h4>Nom</h4>
 			<h4>Prénom</h4>
-			<h4>Age</h4>
-			<h4>Adresse email</h4><br>
-		<h3>LIENS PRO</h3>
+			<h4> {{ app.user.email }} </h4>
+			<h4> {{ requete_age.age }} ans</h4><br>
+		<div class="titre-pro"><h3>LIENS PRO</h3></div>
 			<h4>Site personnel</h4>
 			<h4>Github</h4>
 			<h4>Linkedin</h4>
@@ -39,7 +39,7 @@
 		</div>
 	<div class="col-md-2">
 		<div class="img_profil"><img src="{{ asset('img/deer_small.png') }}"></div>
-		<a class="btn btn-primary btn-espace" href="#" role="button">Modifier votre profil</a>
+		<a class="btn btn-primary btn-espace" href="{{ path ("user_espacemodif") }}" role="button">Modifier votre profil</a>
 	</div>
 </div>
 <div class="col-md-12">
