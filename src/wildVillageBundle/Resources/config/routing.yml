@@ -1,3 +1,7 @@
+wild_village_user:
+    resource: "@wildVillageBundle/Resources/config/routing/message.yml"
+    prefix:   /mess
+
 wild_village_homepage:
     path:     /
     defaults: { _controller: wildVillageBundle:Default:index }
