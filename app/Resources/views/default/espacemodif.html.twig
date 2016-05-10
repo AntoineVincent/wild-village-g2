@@ -2,10 +2,10 @@
 
 
 {% block body %}
-<div class="col-md-12">{{ app.user.username }} vous pouvez modifier vos informations ici.</div>
+<div class="col-md-12 ent_espace"><h3>{{ app.user.username }} vous pouvez modifier vos informations ici.</h3></div>
 <div class="col-md-12">
 	<div class="col-md-3"></div>
-	<div class="col-md-6">
+	<div class="col-md-6 form_espace">
 		<form action="{{ path("user_espacemodif") }}" method="post" class="espace_modif">
 			<div class="col-md-12">
 				<label for="username">Pseudo :</label>
@@ -28,8 +28,8 @@
 				<input type="string" id="email" name="email" value="{{ app.user.email }}"/>
 			</div>
 			<div class="col-md-12">
-				<label for="biographie">Biographie :</label>
-				<input type="text" id="biographie" name="biographie" value="{{ requete_infos.biographie }}"/>
+				<label for="biographie" class="labelbio">Biographie :</label>
+				<textarea id="biographie" name="biographie">{{ requete_infos.biographie }}</textarea>
 			</div><br>
 			<div class="col-md-12">
 				<label for="site">Site personnel :</label>

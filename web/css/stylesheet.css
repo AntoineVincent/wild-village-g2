@@ -177,6 +177,11 @@ a:hover {
 
 /* Espace perso */
 
+.ent_espace h3 {
+	margin-top: -15px;
+	text-align: center;
+}
+
 h3 {
 	color: #58c4b8;
 }
@@ -243,6 +248,35 @@ h3 {
 	color: white;
 	text-align: center;
 }
+
+.form_espace {
+	background: #58c4b8;
+}
+
+.espace_modif label {
+	margin-left: 30px;
+	display: block;
+    width: 150px;
+    float: left;
+    color: white;
+    margin-top: 10px;
+}
+
+.espace_modif input {
+	width: 300px;
+	margin-top: 5px;
+}
+
+.espace_modif textarea {
+	width: 300px;
+	margin-top: 5px;
+}
+
+.espace_modif .btnlogin {
+	margin-top: 5px;
+	margin-left: 180px;
+}
+
 /* Login-page */
 .logform {
 	background-color: #58c4b8;
