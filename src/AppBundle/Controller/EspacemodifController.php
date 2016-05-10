@@ -28,6 +28,7 @@ class EspacemodifController extends Controller
 
 
         $requestinfos = $em->getRepository('AppBundle:datauser')->findOneByIduser($user->getId());
+
         $requestinfos->setNom($nom);
         $requestinfos->setPrenom($prenom);
         $requestinfos->setBiographie($biographie);
@@ -37,11 +38,13 @@ class EspacemodifController extends Controller
         $requestinfos->setTweeter($tweeter);
         $requestinfos->setDoyoubuzz($doyoubuzz);
 
+
+        $requestinfos->setnom($nom);
+        
         $em->persist($requestinfos);
         $em->flush();
 
-        return $this->render('default/espacemodif.html.twig', array(
-            'requete_infos' => $requestinfos,
+        return $this->render('default/espacemodif.html.twig', array('requete_infos' => $requestinfos,
         ));      
     }
 }
