@@ -6,17 +6,17 @@
 <div class="col-md-12">
 	<div class="col-md-3 profil">
 		<h3>MON PROFIL</h3>
-			<h4>Ma biographie</h4><br>
-			<h4>Nom</h4>
-			<h4>Prénom</h4>
+			<h4>{{ requete_infos.biographie }}</h4><br>
+			<h4>{{ requete_infos.nom }}</h4>
+			<h4>{{ requete_infos.prenom }}</h4>
 			<h4> {{ app.user.email }} </h4>
 			<h4> {{ requete_age.age }} ans</h4><br>
 		<div class="titre-pro"><h3>LIENS PRO</h3></div>
-			<h4>Site personnel</h4>
-			<h4>Github</h4>
-			<h4>Linkedin</h4>
-			<h4>Tweeter</h4>
-			<h4>Doyoubuzz</h4>
+			<h4>Site personnel : {{ requete_infos.site }}</h4>
+			<h4>Github : {{ requete_infos.github }}</h4>
+			<h4>Linkedin : {{ requete_infos.linkedin }}</h4>
+			<h4>Tweeter : {{ requete_infos.tweeter }}</h4>
+			<h4>Doyoubuzz : {{ requete_infos.doyoubuzz }}</h4>
 	</div>
 		
 		<div class="col-md-7 flux-perso">

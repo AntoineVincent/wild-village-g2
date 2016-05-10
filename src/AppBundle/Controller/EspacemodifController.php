@@ -18,10 +18,24 @@ class EspacemodifController extends Controller
         $user = $this->container->get('security.context')->getToken()->getUser();
 
         $nom = $request->request->get('nom');
+        $prenom = $request->request->get('prenom');
+        $biographie = $request->request->get('biographie');
+        $site = $request->request->get('site');
+        $github = $request->request->get('github');
+        $linkedin = $request->request->get('linkedin');
+        $tweeter = $request->request->get('tweeter');
+        $doyoubuzz = $request->request->get('doyoubuzz');
+
 
         $requestinfos = $em->getRepository('AppBundle:datauser')->findOneByIduser($user->getId());
         $requestinfos->setNom($nom);
-        
+        $requestinfos->setNom($prenom);
+        $requestinfos->setNom($biographie);
+        $requestinfos->setNom($site);
+        $requestinfos->setNom($github);
+        $requestinfos->setNom($linkedin);
+        $requestinfos->setNom($tweeter);
+        $requestinfos->setNom($doyoubuzz);
 
         $em->persist($requestinfos);
         $em->flush();
