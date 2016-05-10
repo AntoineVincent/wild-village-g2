@@ -2,9 +2,9 @@
 
 
 {% block body %}
-<div class="col-md-12 ent_espace"><h3>{{ app.user.username }} vous pouvez modifier vos informations ici.</h3></div>
+<div class="col-md-12 ent_espace"><h3><b>{{ app.user.username }}</b>, vous pouvez modifier vos informations ici.</h3></div>
 <div class="col-md-12">
-	<div class="col-md-3"></div>
+	<div class="col-md-3 img1"><img src="{{ asset('img/chausson1.png') }}"></div>
 	<div class="col-md-6 form_espace">
 		<form action="{{ path("user_espacemodif") }}" method="post" class="espace_modif">
 			<div class="col-md-12">
@@ -57,8 +57,11 @@
 			<div class="col-md-12">
 				<input type="submit" class="btnlogin" id="_submit" name="submit" value="Envoyer" />
 			</div>
+			<div class="col-md-12 return">
+				<a href="{{ path ("user_espace") }}">Retour au profil</a>
+			</div>
 		</form>
 	</div>
-	<div class="col-md-3"></div>	
+	<div class="col-md-3 img2"><img src="{{ asset('img/chausson2.png') }}"></div>	
 </div>
 {% endblock %}
