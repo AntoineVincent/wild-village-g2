@@ -52,17 +52,14 @@
 </nav>
 <!-- END NAVBAR -->
 
+<div class="col-md-12">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+</div>
 
  <!-- FOOTER -->
- <footer>
-  <div class="col-md-4 footerr">
-    <p class="text-muted">Site développé par les élèves de la Wild Code School</p>
-  </div>
-  <div class="col-md-8 social footerr">
-    <div class="col-md-3"></div>
-    <div class="col-md-6 a">
+
+<div class="col-md-12 foot">
+  <div class="col-md-3 social footerr a">
       <a href="https://www.facebook.com/wildcodeschool" target="_blank">
         <img class="typemarge" src="{{ asset('img/social/facebook.svg') }}" alt="Facebook - Wild Code School"></a>
       <a href="https://twitter.com/wildcodeschool" target="_blank">
@@ -70,7 +67,12 @@
       </a>
       <a href="https://www.instagram.com/wildcodeschool/" target="_blank">
         <img src="{{ asset('img/social/instagram.svg') }}" alt="Instagram - Wild Code School">
-      </a>
+      </a> 
+  </div>
+  <div class="col-md-6 footerr">
+    <p class="text-muted">Site développé par les élèves de la Wild Code School</p>
+  </div>        
+  <div class="col-md-3 social footerr a">
       <a href="https://fr.linkedin.com/edu/wild-code-school-192048" target="_blank">
         <img src="{{ asset('img/social/linkedin.svg') }}" alt="Linkedin - Wild Code School">
       </a>
@@ -80,9 +82,9 @@
       <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank">
         <img src="{{ asset('img/social/youtube.svg') }}" alt="Youtube - Wild Code School">
       </a>
-    </div>        
   </div>
-</footer>
+
+</div>
+
  <!-- FOOTER END -->       
-    </body>
 </html>

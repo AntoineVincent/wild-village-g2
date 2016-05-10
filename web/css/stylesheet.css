@@ -37,12 +37,10 @@
 }
 
 /* FOOTER */
-footer {
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
+.foot {
 	height: 60px;
 	background-color: #58c4b8;
+	margin-top: 70px;
 }
 
 footer p {
@@ -54,7 +52,8 @@ footer p {
 .text-muted {
 	color: #3d3d3d;
 	color: white;
-	padding-top: 5px;
+	padding-top: 15px;
+	margin-left: 60px;
 }
 .a img {
     width: 60px;
@@ -62,20 +61,13 @@ footer p {
     padding: 5px;
     border-radius: 50px;
     background-color: white;
+    margin-left: 20px;
 }
 .a {
 	height: 60px;
 }
 /* index page */
-html {
-	height: 100%;
-	position:relative;
-}
 body{
-	position:relative;
-	min-height: 780px;
-	height: 100%;
-	width: 100%;
 	overflow-x: hidden;
 	color: #3d3d3d;
 }
@@ -302,7 +294,7 @@ h3 {
 }
 
 .return a {
-	margin-left : 480px;
+	margin-left : 510px;
 	margin-top: 10px;
 	color: white;
 }
