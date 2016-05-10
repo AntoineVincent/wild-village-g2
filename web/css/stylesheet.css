@@ -240,6 +240,13 @@ h3 {
 	color: white;
 	text-align: center;
 }
+.craf {
+	color: white;
+	text-decoration: none;
+}
+.craf:hover {
+	color: #3d3d3d;
+}
 
 .form_espace {
 	background: #58c4b8;
@@ -394,8 +401,8 @@ margin-bottom: 30px;
 .contentmesssupr {
 	background-color:#58c4b8 ;
 	border-radius: 2px;
-	border: solid #3d3d3d 1px;
 	padding: 10px;
+	color: white;
 }
 .btndelmess{
 	padding: 2px;
