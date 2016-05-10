@@ -29,13 +29,13 @@ class EspacemodifController extends Controller
 
         $requestinfos = $em->getRepository('AppBundle:datauser')->findOneByIduser($user->getId());
         $requestinfos->setNom($nom);
-        $requestinfos->setNom($prenom);
-        $requestinfos->setNom($biographie);
-        $requestinfos->setNom($site);
-        $requestinfos->setNom($github);
-        $requestinfos->setNom($linkedin);
-        $requestinfos->setNom($tweeter);
-        $requestinfos->setNom($doyoubuzz);
+        $requestinfos->setPrenom($prenom);
+        $requestinfos->setBiographie($biographie);
+        $requestinfos->setSite($site);
+        $requestinfos->setGithub($github);
+        $requestinfos->setLinkedin($linkedin);
+        $requestinfos->setTweeter($tweeter);
+        $requestinfos->setDoyoubuzz($doyoubuzz);
 
         $em->persist($requestinfos);
         $em->flush();
