@@ -3,21 +3,6 @@
 
 {% block body %}
 
-<div class="col-md-12 "><h3>Bienvenue sur votre espace personnel <b>{{ app.user.username }}</b><h3></div>
-<div class="col-md-12">
-	<div class="col-md-3 profil">
-		<h3>MON PROFIL</h3>
-			<h4>{{ requete.biographie }}</h4>
-			<h4>{{ requete.nom }}</h4>
-			<h4>{{ requete.prenom }}</h4>
-			<h4> {{ app.user.email }} </h4>
-			<h4> {{ requete.age }} ans</h4><br>
-		<div class="titre-pro"><h3>LIENS PRO</h3></div>
-			<h4>Site personnel : {{ requete.site }}</h4>
-			<h4>Github : {{ requete.github }}</h4>
-			<h4>Linkedin : {{ requete.linkedin }}</h4>
-			<h4>Tweeter : {{ requete.tweeter }}</h4>
-			<h4>Doyoubuzz : {{ requete.doyoubuzz }}</h4>
 	<div class="col-md-12 entetepro">Bienvenue sur votre espace {{ app.user.username }}
 	</div>
 	<div class="col-md-12">
