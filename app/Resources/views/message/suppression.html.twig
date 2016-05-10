@@ -1,19 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h3>Vous êtes sur le point de supprimer définitivement le message suivant:</h3></br>
+    <h3 class="entetesup">Vous êtes sur le point de supprimer définitivement le message suivant:</h3></br>
     
     <div class="col-md-6 suppressionform">
-        <ul class="deletemessage">
+        <ul class="deletemessage mla">
             <h4>Message de <b>{{ message.usersent }}</b> à <b>{{ message.userdest }}</b> - le {{ message.date|date('Y-m-d H:i:s') }}</h4>
-            <p>{{ message.content }}</p>
+            <hr style="border-color:#3d3d3d;">
+            <p class="contentmesssupr">{{ message.content }}</p>
         </ul>
         <ul class="deletemessage">
             <li>
-                {{ form_start(delete_form) }} <input type="submit" value="Confirmer la suppression"> {{ form_end(delete_form) }}
+                {{ form_start(delete_form) }} <input class="btndelmess" type="submit" value="Confirmer la suppression"> {{ form_end(delete_form) }}
             </li>
+            <li></li>
             <li>
-                <a href="{{ path('mess_mess') }}">Ne pas supprimer et revenir à la messagerie</a>
+                <a class="btndelmess" href="{{ path('mess_mess') }}">Ne pas supprimer et revenir à la messagerie</a>
             </li>
         </ul>
     </div>
