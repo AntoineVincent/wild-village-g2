@@ -46,9 +46,9 @@ footer {
 }
 
 footer p {
-	margin-left: 0;
-	margin-right: 0;
-	text-align: center;
+	margin-left: 0px;
+	margin-top: 0px;
+	
 }
 
 .text-muted {
@@ -258,6 +258,8 @@ h3 {
 
 .form_espace {
 	background: #58c4b8;
+	border-radius: 10px;
+	height: 505px;
 }
 
 .espace_modif label {
@@ -280,8 +282,36 @@ h3 {
 }
 
 .espace_modif .btnlogin {
-	margin-top: 5px;
+	margin-top: 10px;
 	margin-left: 180px;
+	background-color: white;
+	border-radius: 5px;
+	color: #3d3d3d;
+	padding: 5px;
+	border: solid #3d3d3d 1px;
+}
+
+.espace_modif .btnlogin:hover {
+	background-color: #3d3d3d;
+	color: white;
+	text-decoration: none;
+}
+
+.img1 img {
+	margin-left: 100px;
+	margin-top: 150px;
+}
+
+.img2 img {
+	margin-left: -10px;
+	margin-top: 150px;
+	
+}
+
+.return a {
+	margin-left : 480px;
+	margin-top: 10px;
+	color: white;
 }
 
 /* Login-page */
