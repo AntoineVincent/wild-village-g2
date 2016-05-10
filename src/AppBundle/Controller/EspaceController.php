@@ -17,9 +17,9 @@ class EspaceController extends Controller
 
         $user = $this->container->get('security.context')->getToken()->getUser();
 
-        $requestage = $em->getRepository('AppBundle:datauser')->findOneByIduser($user->getId());
+        $request = $em->getRepository('AppBundle:datauser')->findOneByIduser($user->getId());
         return $this->render('default/espace.html.twig', array(
-            'requete_age' => $requestage,
+            'requete' => $request,
         ));      
     }
 }
