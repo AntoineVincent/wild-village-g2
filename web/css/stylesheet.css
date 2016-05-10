@@ -27,13 +27,13 @@
 	border-color: #3d3d3d;
 	color: #3d3d3d;
 	border-radius: 7px;
-	box-shadow: none;
+	border:solid #3d3d3d 1px;
 }
 .btn-primary:hover {
 	background-color: #3d3d3d;
 	border-color: white;
 	color: white;
-	box-shadow: none;
+	
 }
 
 /* FOOTER */
