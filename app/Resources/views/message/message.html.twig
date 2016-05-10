@@ -3,16 +3,17 @@
 {% block body %}
 
 <div class="messagerie">     
-    <div class="col-md-12">Bienvenue sur votre messagerie {{ '' }}</div>
+    <div class="col-md-12 entetemess">Bienvenue sur votre messagerie {{ '' }}</div>
     <div class="col-md-12">
         <div class="col-md-3 displayform"> 
-            <h3>ENVOYER UN MESSAGE</h3> 
+            <h3>ENVOYER UN MESSAGE</h3>
+            <hr style="border-color:#3d3d3d;">
             {{ form_start(form) }}
             <div class="col-md-12 destinataire"> 
-                <div class="col-md-4"> 
-                <strong>Destinataire: </strong> 
+                <div class="col-md-5"> 
+                <strong>Destinataire:</strong> 
                 </div> 
-                <div class="col-md-8"> 
+                <div class="col-md-7"> 
                     {{ form_widget(form.userdest) }} 
                     {{ form_errors(form.userdest) }} 
                 </div>
@@ -41,6 +42,8 @@
                     <p>{{ message.content }}</p>
                 </div>
                 {% endfor %}
+
+                <hr style="border-color:#3d3d3d;">
 
                 <h3>Message reçus</h3>
                 {% for message in messagesrecus %}
