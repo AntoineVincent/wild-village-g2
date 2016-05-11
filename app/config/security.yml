@@ -30,5 +30,7 @@ security:
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
         - { path: user/flux, role: ROLE_USER }
-        - { path: user/espace, role: ROLE_USER }
+        - { path: user/espacemodif, role: ROLE_USER }
+        - { path: user/search, role: ROLE_USER }
+        - { path: user/ami, role: ROLE_USER }
         - { path: mess, role: ROLE_USER }

@@ -16,7 +16,12 @@ class DefaultController extends Controller
 
         $search = $request->request->get('recherche');
 
-        $searchresult = $em->getRepository('AppBundle:User')->findByUsername($search);
+        if ($search == null) {
+                $searchresult = $em->getRepository('AppBundle:User')->findAll();
+            }
+        else {
+            $searchresult = $em->getRepository('AppBundle:User')->findByUsername($search);
+            }
 
         return $this->render('default/search.html.twig', array(
             'search_result' => $searchresult,

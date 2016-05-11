@@ -432,6 +432,7 @@ margin-bottom: 30px;
 	background-color: #58c4b8;
 	border-radius: 5px;
 	height: 230px;
+	margin: 1px;
 }
 .profilerwilder {
 	float: left;
@@ -451,4 +452,8 @@ margin-bottom: 30px;
 	background-color: #3d3d3d;
 	color: white;
 	text-decoration: none;
+}
+.searchtitle {
+	text-align: center;
+	color: #3d3d3d;
 }
