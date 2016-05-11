@@ -18,6 +18,7 @@ class EspacemodifController extends Controller
 
         $nom = $request->request->get('nom');
         $prenom = $request->request->get('prenom');
+        $genre = $request->request->get('genre');
         $biographie = $request->request->get('biographie');
         $sitePersos = $request->request->get('site');
         $github = $request->request->get('github');
@@ -58,10 +59,10 @@ class EspacemodifController extends Controller
             if (!empty($age)) {
                 $requestinfos->setAge($age);
             }
+            $requestinfos->setGenre($genre);
             $em->persist($requestinfos);
             $em->flush();
         }
-
         return $this->render('default/espacemodif.html.twig', array(
             'requete_infos' => $requestinfos,
         ));   

@@ -251,7 +251,7 @@ h3 {
 .form_espace {
 	background: #58c4b8;
 	border-radius: 10px;
-	height: 505px;
+	height: 535px;
 }
 
 .espace_modif label {
@@ -264,6 +264,11 @@ h3 {
 }
 
 .espace_modif input {
+	width: 300px;
+	margin-top: 5px;
+}
+
+.espace_modif select {
 	width: 300px;
 	margin-top: 5px;
 }

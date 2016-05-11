@@ -20,6 +20,18 @@
 				<input type="string" id="prenom" name="prenom" value="{{ requete_infos.prenom }}"/>
 			</div>
 			<div class="col-md-12">
+				<label for="genre">Genre :</label>
+				<select name="genre" id="genre">
+					{% if requete_infos.genre == "homme" %}
+ 		        		<option selected value="homme">Homme</option>
+ 		         		<option value="femme">Femme</option>
+ 		         	{% else %}
+ 		        		<option value="homme">Homme</option>
+ 		         		<option selected value="femme">Femme</option>
+ 		         	l{% endif %}
+       			</select>
+			</div>
+			<div class="col-md-12">
 				<label for="age">Age :</label>
 				<input type="integer" id="age" name="age" value="{{ requete_infos.age }}"/>
 			</div>

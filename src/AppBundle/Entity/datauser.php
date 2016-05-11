@@ -43,6 +43,13 @@ class datauser
     private $prenom;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="genre", type="string", nullable=true)
+     */
+    private $genre;
+
+    /**
      * @var text
      *
      * @ORM\Column(name="biographie", type="text", nullable=true)
@@ -173,6 +180,30 @@ class datauser
     public function getPrenom()
     {
         return $this->prenom;
+    }
+
+    /**
+     * Set genre
+     *
+     * @param string $genre
+     *
+     * @return datauser
+     */
+    public function setGenre($genre)
+    {
+        $this->genre = $genre;
+
+        return $this;
+    }
+
+    /**
+     * Get prenom
+     *
+     * @return string
+     */
+    public function getGenre()
+    {
+        return $this->genre;
     }
 
     /**
