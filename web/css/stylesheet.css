@@ -222,12 +222,16 @@ h3 {
 .biobio {
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 3px;
-	border:solid #3d3d3d 1px;
+	border:solid white 1px;
 	color: #3d3d3d;
 }
 
 .biobio h3 {
 	text-decoration: underline;
+}
+
+.biobio h4 {
+	text-align: center;
 }
 
 .entetepro {
@@ -238,7 +242,6 @@ h3 {
 	padding-left: 3px;
 }
 .spanesp {
-	text-decoration: underline;
 	color: #3d3d3d;
 }
 .profil>h4 {
