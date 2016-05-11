@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="messagerie">     
+    <div class="col-md-12 entetemess">Bienvenue sur votre messagerie {{ '' }}</div>
+    <div class="col-md-12">
+        <div class="col-md-3 displayform"> 
+            <h3>ENVOYER UN MESSAGE</h3>
+            <hr style="border-color:#3d3d3d;">
+            {{ form_start(form) }}
+            <div class="col-md-12 destinataire"> 
+                <div class="col-md-5"> 
+                <strong>Destinataire:</strong> 
+                </div> 
+                <div class="col-md-7"> 
+                    {{ form_widget(form.userdest) }} 
+                    {{ form_errors(form.userdest) }} 
+                </div>
+            </div>
+            <div class="col-md-12 votremessage"> 
+                <div class="col-md-12"> 
+                <strong>Votre message:</strong> 
+                </div> 
+                <div class="col-md-12"> 
+                    {{ form_widget(form.content) }} 
+                    {{ form_errors(form.content) }} 
+                </div>
+            </div> 
+
+            <div class="col-md-12 register-but">
+                <input type="submit" value="Envoyer" />
+            </div>
+            {{ form_end(form) }} 
+        </div>
+
+        <div class="col-md-7 displaylist">
+                <h3>Message envoyés</h3>    
+                {% for message in messagesenvoyes %}
+                <div class ="displaymessage">
+                    <h4>Envoyé à <b>{{ message.userdest }}</b> - le {{ message.date|date('Y-m-d H:i:s') }}  <a href="{{ path('mess_supp', { 'id': message.id }) }}">supprimer</a></h4>
+                    <p>{{ message.content }}</p>
+                </div>
+                {% endfor %}
+
+                <hr style="border-color:#3d3d3d;">
+
+                <h3>Message reçus</h3>
+                {% for message in messagesrecus %}
+                <div class ="displaymessage">
+                    <h4>Reçu de <b>{{ message.usersent }}</b> - le {{ message.date|date('Y-m-d H:i:s') }}  <a href="{{ path('mess_supp', { 'id': message.id }) }}">supprimer</a></h4>
+                    <p>{{ message.content }}</p>
+                </div>
+                {% endfor %}    
+
+        </div>
+
+        <div class="col-md-2 displayimage">
+                <img src="{{ asset('img/messagerie.png') }}">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -25,7 +25,6 @@ user_login_check:
 user_espace:
     path:     /user/espace
     defaults: { _controller: AppBundle:Espace:espace }
-
 user_post:
     path:     /user/post
     defaults: { _controller: AppBundle:Post:post }
@@ -33,3 +32,21 @@ user_post:
 post_ajout:
     path:     /user/post_ajout
     defaults: { _controller: AppBundle:Post:post_ajout }
+user_flux:
+    path:     /user/flux
+    defaults: { _controller: AppBundle:Flux:flux }
+
+user_espacemodif:
+    path:     /user/espacemodif
+    defaults: { _controller: AppBundle:Espacemodif:espacemodif }
+
+user_search:
+    path:    /user/search
+    defaults: { _controller: AppBundle:Default:search }
+
+user_ami:
+    path:     /user/ami/{idami}
+    defaults: { _controller: AppBundle:Amispace:amispace } 
+
+default_index:
+    path:    /

@@ -2,46 +2,72 @@
 
 
 {% block body %}
-<div class="col-md-12">Bienvenue sur votre espace personnel {{ '' }}</div>
-<div class="col-md-12">
-	<div class="col-md-3 profil">
-		<h3>MON PROFIL</h3>
-			<h4>Ma biographie</h4><br>
-			<h4>Nom</h4>
-			<h4>Prénom</h4>
-			<h4>Age</h4>
-			<h4>Adresse email</h4><br>
-		<h3>LIENS PRO</h3>
-			<h4>Site personnel</h4>
-			<h4>Github</h4>
-			<h4>Linkedin</h4>
-			<h4>Tweeter</h4>
-			<h4>Doyoubuzz</h4>
+
+	<div class="col-md-12 entetepro">Bienvenue sur votre espace {{ app.user.username }}
 	</div>
-		
-		<div class="col-md-7 flux-perso">
-		<h3>MON FLUX PERSONEL</h3>
-			<div class="col-md-12 post_perso">
-				<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la plage</b> - le 29/04/2016</h4>
-				<p>Aujourd'hui petit tour à la plage en famille</p>
-			</div>
-			<div class="col-md-12 post_perso">
-				<h4><img src="{{ asset('img/humeur.png') }}"><b>En pleine forme</b> - le 28/04/2016</h4>
-			</div>
-			<div class="col-md-12 post_perso">
-				<h4><img src="{{ asset('img/megaphone.png') }}"><b>Concours de Brame</b> - le 27/04/2016</h4>
-				<p>La Loupe le 12/05/2016</p>
-			</div>
-			<div class="col-md-12 post_perso">
-				<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la piscine</b> - le 27/04/2016</h4>
-				<p>Le maillot de bain est prêt. Plus que la serviette à trouver</p>
-			</div>
+	<div class="col-md-12">
+		<div class="col-md-3 profil">
+			<hr style="border-color:white;">
+			<h3>MON PROFIL</h3>
+			<hr style="border-color:white;">
+				<div class="biobio">
+					<h3 class="madescr"></h3>
+					<h4 class="biorequ">{{ requete.biographie }}</h4>
+				</div>
+				<h4><span class="spanesp">Prenom :</span> {{ requete.prenom }}</h4>
+				<h4><span class="spanesp">Nom :</span> {{ requete.nom }}</h4>
+				<h4><span class="spanesp">Genre :</span> {{ requete.genre }}</h4>
+				<h4><span class="spanesp">Âge :</span> {{ requete.age }} ans</h4>
+				<h4><span class="spanesp">Email :</span> {{ app.user.email }} </h4>
+			<hr style="border-color:white;">
+			<h3 class="titre-pro">LIENS PRO</h3>
+			<hr style="border-color:white;">
+				<h4><span class="spanesp"></span> 
+					<a class="craf" href="{{ requete.site }}" target="_blank">Consulter mon site</a>
+				</h4>
+				<h4><span class="spanesp"></span> 
+					<a class="craf" href="{{ requete.github }}" target="_blank">Consulter mon Github</a>
+				</h4>
+				<h4><span class="spanesp"></span> 
+					<a class="craf" href="{{ requete.linkedin }}" target="_blank">Consulter mon Linkedin</a>
+				</h4>
+				<h4><span class="spanesp"></span> 
+					<a class="craf" href="{{ requete.tweeter }}" target="_blank">Consulter mon Tweeter</a>
+				</h4>
+				<h4><span class="spanesp"></span> 
+					<a class="craf" href="{{ requete.doyoubuzz }}" target="_blank">Consulter mon Doyoubuzz</a>
+				</h4>
 		</div>
-	<div class="col-md-2">
-		<a class="btn btn-primary btn-espace" href="#" role="button">Modifier votre profil</a>
+			
+			<div class="col-md-7 flux-perso">
+			<h3>MON FLUX PERSONNEL</h3>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la plage</b> - le 29/04/2016</h4>
+					<p>Aujourd'hui petit tour à la plage en famille</p>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/humeur.png') }}"><b>En pleine forme</b> - le 28/04/2016</h4>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/megaphone.png') }}"><b>Concours de Brame</b> - le 27/04/2016</h4>
+					<p>La Loupe le 12/05/2016</p>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la piscine</b> - le 27/04/2016</h4>
+					<p>Le maillot de bain est prêt. Plus que la serviette à trouver</p>
+				</div>
+			</div>
+		<div class="col-md-2">
+			<div class="img_profil">
+				{% if requete.genre == "femme" %}
+ 		        	<img src="{{ asset('img/deer2_small.png') }}">
+ 		        {% elseif requete.genre == "homme" %}
+ 		        	<img src="{{ asset('img/deer_small.png') }}">
+ 		        {% else %}
+ 		        	<img src="{{ asset('img/deer3.png') }}">
+ 		        {% endif %}
+			</div>
+			<a class="btn btn-primary btn-espace" href="{{ path ("user_espacemodif") }}" role="button">Modifier votre profil</a>
+		</div>
 	</div>
-</div>
-<div class="col-md-5"></div>
-<div class="col-md-2 center-block"><h3>MES AMIS</h3></div>
-<div class="col-md-5"></div>
 {% endblock %}

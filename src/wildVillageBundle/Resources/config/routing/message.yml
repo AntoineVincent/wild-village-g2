@@ -1,0 +1,34 @@
+mess_index:
+    path:     /
+    defaults: { _controller: "wildVillageBundle:message:index" }
+    methods:  GET
+
+mess_show:
+    path:     /{id}/show
+    defaults: { _controller: "wildVillageBundle:message:show" }
+    methods:  GET
+
+mess_new:
+    path:     /new
+    defaults: { _controller: "wildVillageBundle:message:new" }
+    methods:  [GET, POST]
+
+mess_mess:
+    path:     /mess
+    defaults: { _controller: "wildVillageBundle:message:message" }
+    methods:  [GET, POST]
+
+mess_supp:
+    path:     /{id}/supp
+    defaults: { _controller: "wildVillageBundle:message:suppression" }
+    methods:  [GET, POST]
+
+mess_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "wildVillageBundle:message:edit" }
+    methods:  [GET, POST]
+
+mess_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "wildVillageBundle:message:delete" }
+    methods:  DELETE

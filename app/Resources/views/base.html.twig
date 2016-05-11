@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Wild Village!{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{{ asset('yourFavIcon.png') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/stylesheet.css') }}">
         <script type="text/javascript" src="{{ asset('js/jquery-2.2.3.min.js') }}" ></script>
@@ -22,19 +23,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href=""><img class="logotage" src="{{ asset('img/logonavbar_small.png') }}"><b>WILD VILLAGE</b></a>
+      <a class="navbar-brand" href="{{ path('default_index') }}"><img class="logotage" src="{{ asset('img/logonavbar_small.png') }}"><b>WILD VILLAGE</b></a>
     </div>
+
+    <form method="POST" action="{{ path('user_search') }}" class="navbar-form navbar-left inline-form">
+      <input type="text" name="recherche" class="input-sm form-control">
+      <input type="submit" value="CHERCHER" class="btn-primary btn-sm">
+    </form>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      
+
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="{{ path('user_flux') }}">Flux</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Mon espace</a></li>
-            <li><a href="#">Messagerie</a></li>
+            <li><a href="{{ path('user_espace') }}">Mon espace</a></li>
+            <li><a href="{{ path('mess_mess') }}">Ma messagerie</a></li>
             <li><a href="#">Mes paramètres</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="{{ path('fos_user_security_logout') }}" >Se déconnecter</a></li>
@@ -46,15 +52,39 @@
 </nav>
 <!-- END NAVBAR -->
 
+<div class="col-md-12">
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+</div>
 
  <!-- FOOTER -->
- <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Site développé par le G2 de la Wild Code School</p>
-      </div>
-</footer>
+
+<div class="col-md-12 foot">
+  <div class="col-md-3 social footerr a">
+      <a href="https://www.facebook.com/wildcodeschool" target="_blank">
+        <img class="typemarge" src="{{ asset('img/social/facebook.svg') }}" alt="Facebook - Wild Code School"></a>
+      <a href="https://twitter.com/wildcodeschool" target="_blank">
+        <img src="{{ asset('img/social/twitter.svg') }}" alt="Twitter - Wild Code School">
+      </a>
+      <a href="https://www.instagram.com/wildcodeschool/" target="_blank">
+        <img src="{{ asset('img/social/instagram.svg') }}" alt="Instagram - Wild Code School">
+      </a> 
+  </div>
+  <div class="col-md-6 footerr">
+    <p class="text-muted">Site développé par les élèves de la Wild Code School</p>
+  </div>        
+  <div class="col-md-3 social footerr a">
+      <a href="https://fr.linkedin.com/edu/wild-code-school-192048" target="_blank">
+        <img src="{{ asset('img/social/linkedin.svg') }}" alt="Linkedin - Wild Code School">
+      </a>
+      <a href="https://github.com/WildCodeSchool" target="_blank">
+        <img src="{{ asset('img/social/github.svg') }}" alt="Github - Wild Code School">
+      </a>
+      <a href="https://www.youtube.com/channel/UCi99G_0QPx5sYsK8zdvQzfw" target="_blank">
+        <img src="{{ asset('img/social/youtube.svg') }}" alt="Youtube - Wild Code School">
+      </a>
+  </div>
+
+</div>
+
  <!-- FOOTER END -->       
-    </body>
 </html>

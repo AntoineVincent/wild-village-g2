@@ -29,6 +29,69 @@ class datauser
     private $age;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", nullable=true)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", nullable=true)
+     */
+    private $prenom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="genre", type="string", nullable=true)
+     */
+    private $genre;
+
+    /**
+     * @var text
+     *
+     * @ORM\Column(name="biographie", type="text", nullable=true)
+     */
+    private $biographie;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="site", type="string", nullable=true)
+     */
+    private $site;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="github", type="string", nullable=true)
+     */
+    private $github;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="linkedin", type="string", nullable=true)
+     */
+    private $linkedin;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="tweeter", type="string", nullable=true)
+     */
+    private $tweeter;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="doyoubuzz", type="string", nullable=true)
+     */
+    private $doyoubuzz;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="iduser", type="integer", nullable=true)
@@ -69,6 +132,222 @@ class datauser
     public function getAge()
     {
         return $this->age;
+    }
+
+    /**
+     * Set nom
+     *
+     * @param string $nom
+     *
+     * @return datauser
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get nom
+     *
+     * @return string
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set prenom
+     *
+     * @param string $prenom
+     *
+     * @return datauser
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+
+        return $this;
+    }
+
+    /**
+     * Get prenom
+     *
+     * @return string
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * Set genre
+     *
+     * @param string $genre
+     *
+     * @return datauser
+     */
+    public function setGenre($genre)
+    {
+        $this->genre = $genre;
+
+        return $this;
+    }
+
+    /**
+     * Get prenom
+     *
+     * @return string
+     */
+    public function getGenre()
+    {
+        return $this->genre;
+    }
+
+    /**
+     * Set biographie
+     *
+     * @param string $biographie
+     *
+     * @return datauser
+     */
+    public function setBiographie($biographie)
+    {
+        $this->biographie = $biographie;
+
+        return $this;
+    }
+
+    /**
+     * Get biographie
+     *
+     * @return string
+     */
+    public function getBiographie()
+    {
+        return $this->biographie;
+    }
+
+    /**
+     * Set site
+     *
+     * @param string $site
+     *
+     * @return datauser
+     */
+    public function setSite($site)
+    {
+        $this->site = $site;
+
+        return $this;
+    }
+
+    /**
+     * Get site
+     *
+     * @return string
+     */
+    public function getSite()
+    {
+        return $this->site;
+    }
+
+/**
+     * Set github
+     *
+     * @param string $github
+     *
+     * @return datauser
+     */
+    public function setGithub($github)
+    {
+        $this->github = $github;
+
+        return $this;
+    }
+
+    /**
+     * Get github
+     *
+     * @return string
+     */
+    public function getGithub()
+    {
+        return $this->github;
+    }
+
+    /**
+     * Set linkedin
+     *
+     * @param string $linkedin
+     *
+     * @return datauser
+     */
+    public function setLinkedin($linkedin)
+    {
+        $this->linkedin = $linkedin;
+
+        return $this;
+    }
+
+    /**
+     * Get linkedin
+     *
+     * @return string
+     */
+    public function getLinkedin()
+    {
+        return $this->linkedin;
+    }
+
+    /**
+     * Set tweeter
+     *
+     * @param string $tweeter
+     *
+     * @return datauser
+     */
+    public function setTweeter($tweeter)
+    {
+        $this->tweeter = $tweeter;
+
+        return $this;
+    }
+
+    /**
+     * Get tweeter
+     *
+     * @return string
+     */
+    public function getTweeter()
+    {
+        return $this->tweeter;
+    }
+
+    /**
+     * Set doyoubuzz
+     *
+     * @param string $doyoubuzz
+     *
+     * @return datauser
+     */
+    public function setDoyoubuzz($doyoubuzz)
+    {
+        $this->doyoubuzz = $doyoubuzz;
+
+        return $this;
+    }
+
+    /**
+     * Get doyoubuzz
+     *
+     * @return string
+     */
+    public function getDoyoubuzz()
+    {
+        return $this->doyoubuzz;
     }
 
     /**
