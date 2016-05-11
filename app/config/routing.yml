@@ -26,6 +26,10 @@ user_espace:
     path:     /user/espace
     defaults: { _controller: AppBundle:Espace:espace }
 
-user_flux:
-    path:     /user/flux
-    defaults: { _controller: AppBundle:Flux:flux }
+user_post:
+    path:     /user/post
+    defaults: { _controller: AppBundle:Post:post }
+
+post_ajout:
+    path:     /user/post_ajout
+    defaults: { _controller: AppBundle:Post:post_ajout }

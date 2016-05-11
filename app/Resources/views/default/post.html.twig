@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   <div class="col-md-12">
+   	<div class="col-md-4"></div>
+    <div class="col-md-4 flux-perso">
+    	<div class="col-md-12">
+    		{{ form_label(form.datePost) }}
+    		{{ form_widget(form.datePost) }}
+    		{{ form_errors(form.datePost) }}
+    	</div>
+    	<div class="col-md-12">
+    		{{ form_label(form.prenomAuteurPost) }}
+    		{{ form_widget(form.prenomAuteurPost) }}
+    		{{ form_errors(form.prenomAuteurPost) }}
+    	</div>
+    	<div class="col-md-12">
+   	 		{{ form_label(form.nomAuteurPost) }}
+    		{{ form_widget(form.nomAuteurPost) }}
+    		{{ form_errors(form.nomAuteurPost) }}
+    	</div>
+    	<div class="col-md-12">
+    		{{ form_label(form.titre) }}
+    		{{ form_widget(form.titre) }}
+    		{{ form_errors(form.titre) }}
+    	</div>
+    	<div class="col-md-12">
+   			{{ form_label(form.contenuPost) }}
+    		{{ form_widget(form.contenuPost) }}
+    		{{ form_errors(form.contenuPost) }}
+    	</div>
+    	<div class="col-md-4"></div>
+    </div>
+    <div class="col-md-7 flux-perso">
+		<h3>FLUX ACTUS</h3>
+			<div class="col-md-12 post_perso">
+				<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la plage</b> - le 29/04/2016</h4>
+				<p>Aujourd'hui petit tour à la plage en famille</p>
+			</div>
+			<div class="col-md-12 post_perso">
+				<h4><img src="{{ asset('img/humeur.png') }}"><b>En pleine forme</b> - le 28/04/2016</h4>
+			</div>
+			<div class="col-md-12 post_perso">
+				<h4><img src="{{ asset('img/megaphone.png') }}"><b>Concours de Brame</b> - le 27/04/2016</h4>
+				<p>La Loupe le 12/05/2016</p>
+			</div>
+			<div class="col-md-12 post_perso">
+				<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la piscine</b> - le 27/04/2016</h4>
+				<p>Le maillot de bain est prêt. Plus que la serviette à trouver</p>
+			</div>
+		</div>
+{% endblock %}
