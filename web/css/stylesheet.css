@@ -225,6 +225,11 @@ h3 {
 	border:solid #3d3d3d 1px;
 	color: #3d3d3d;
 }
+
+.biobio h3 {
+	text-decoration: underline;
+}
+
 .entetepro {
 	font-size: 24px;
 	text-align: center;
