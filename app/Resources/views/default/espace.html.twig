@@ -61,8 +61,10 @@
 			<div class="img_profil">
 				{% if requete.genre == "femme" %}
  		        	<img src="{{ asset('img/deer2_small.png') }}">
+ 		        {% elseif requete.genre == "homme" %}
+ 		        	<img src="{{ asset('img/deer_small.png') }}">
  		        {% else %}
- 		        	<img src="{{ asset('img/deer_small.png') }}">>
+ 		        	<img src="{{ asset('img/deer3.png') }}">
  		        {% endif %}
 			</div>
 			<a class="btn btn-primary btn-espace" href="{{ path ("user_espacemodif") }}" role="button">Modifier votre profil</a>

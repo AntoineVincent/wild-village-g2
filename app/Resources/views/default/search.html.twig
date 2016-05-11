@@ -9,8 +9,10 @@
 		<div class="col-md-4 rslt-bgrd">
 			{% if tabsearch.gender == "femme" %}
  		        <img class="profilerwilder" src="{{ asset('img/deer2_small.png') }}">
- 		    {% else %}
+ 		    {% elseif tabsearch.gender == "homme" %}
  		        <img class="profilerwilder" src="{{ asset('img/deer_small.png') }}">
+ 		    {% else %}
+ 		        <img class="profilerwilder" src="{{ asset('img/deer3.png') }}">
  		    {% endif %}
 			<p class="rslt-search">Pseudo : {{ tabsearch['username'] }}</p>
 			<p class="rslt-search">Derniere connexion: {{ tabsearch['lastlogin']|date('d-m-Y') }}</p>
