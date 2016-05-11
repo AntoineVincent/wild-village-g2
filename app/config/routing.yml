@@ -33,7 +33,11 @@ user_flux:
 user_espacemodif:
     path:     /user/espacemodif
     defaults: { _controller: AppBundle:Espacemodif:espacemodif }
-       
+
 user_search:
     path:    /user/search
     defaults: { _controller: AppBundle:Default:search }
+
+user_ami:
+    path:     /user/ami/{idami}
+    defaults: { _controller: AppBundle:Amispace:amispace } 

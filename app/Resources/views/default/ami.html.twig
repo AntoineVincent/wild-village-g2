@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+	<div class="col-md-12 entetepro">Espace Personnel de {{ ami.username }}
+	<hr style="border-color:#3d3d3d;">
+	</div>
+	<div class="col-md-12">
+		<div class="col-md-3 profil">
+			<hr style="border-color:#3d3d3d;">
+			<h3>INFOS</h3>
+			<hr style="border-color:#3d3d3d;">
+				<div class="biobio">
+					<p class="madescr"> Présentation :</p>
+					<h4 class="biorequ">{{ amidata.biographie }}</h4>
+				</div>
+				<h4><span class="spanesp">Prénom:</span> {{ amidata.prenom }}</h4>
+				<h4><span class="spanesp">Nom:</span> {{ amidata.nom }}</h4>
+				<h4><span class="spanesp">Age:</span> {{ amidata.age }} ans</h4>
+				<h4><span class="spanesp">E-mail:</span> {{ ami.email }} </h4>
+			<hr style="border-color:#3d3d3d;">
+			<h3 class="titre-pro">LIENS PRO</h3>
+			<hr style="border-color:#3d3d3d;">
+				<h4><span class="spanesp">Site personnel:</span> 
+					<a class="craf" href="{{ amidata.site }}">{{ amidata.site }}</a>
+				</h4>
+				<h4><span class="spanesp">Github:</span> 
+					<a class="craf" href="{{ amidata.github }}">{{ amidata.github }}</a>
+				</h4>
+				<h4><span class="spanesp">Linkedin:</span> 
+					<a class="craf" href="{{ amidata.linkedin }}">{{ amidata.linkedin }}</a>
+				</h4>
+				<h4><span class="spanesp">Tweeter:</span> 
+					<a class="craf" href="{{ amidata.tweeter }}">{{ amidata.tweeter }}</a>
+				</h4>
+				<h4><span class="spanesp">Doyoubuzz:</span> 
+					<a class="craf" href="{{ amidata.doyoubuzz }}">{{ amidata.doyoubuzz }}</a>
+				</h4>
+		</div>
+			
+			<div class="col-md-7 flux-perso">
+			<h3>MON FLUX PERSONEL</h3>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la plage</b> - le 29/04/2016</h4>
+					<p>Aujourd'hui petit tour à la plage en famille</p>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/humeur.png') }}"><b>En pleine forme</b> - le 28/04/2016</h4>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/megaphone.png') }}"><b>Concours de Brame</b> - le 27/04/2016</h4>
+					<p>La Loupe le 12/05/2016</p>
+				</div>
+				<div class="col-md-12 post_perso">
+					<h4><img src="{{ asset('img/jumelles.png') }}"><b>Je vais à la piscine</b> - le 27/04/2016</h4>
+					<p>Le maillot de bain est prêt. Plus que la serviette à trouver</p>
+				</div>
+			</div>
+		<div class="col-md-2">
+			<div class="img_profil"><img src="{{ asset('img/deer_small.png') }}"></div>
+		</div>
+	</div>
+{% endblock %}
