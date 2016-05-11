@@ -3,31 +3,51 @@
 {% block body %}
    <div class="col-md-12">
    	<div class="col-md-4"></div>
-    <div class="col-md-4 flux-perso">
+    <div class="col-md-4 create-post">
     	<div class="col-md-12">
-    		{{ form_label(form.datePost) }}
-    		{{ form_widget(form.datePost) }}
-    		{{ form_errors(form.datePost) }}
+    		<div class="col-md-5">
+    			{{ form_label(form.datePost) }}
+    		</div>
+    		<div class="col-md-7">
+    			{{ form_widget(form.datePost) }}
+    			{{ form_errors(form.datePost) }}
+    		</div>
     	</div>
     	<div class="col-md-12">
-    		{{ form_label(form.prenomAuteurPost) }}
-    		{{ form_widget(form.prenomAuteurPost) }}
-    		{{ form_errors(form.prenomAuteurPost) }}
+    		<div class="col-md-5">
+    			{{ form_label(form.prenomAuteurPost) }}
+    		</div>
+    		<div class="col-md-7">
+    			{{ form_widget(form.prenomAuteurPost) }}
+    			{{ form_errors(form.prenomAuteurPost) }}
+    		</div>
     	</div>
     	<div class="col-md-12">
-   	 		{{ form_label(form.nomAuteurPost) }}
-    		{{ form_widget(form.nomAuteurPost) }}
-    		{{ form_errors(form.nomAuteurPost) }}
+    		<div class="col-md-5">
+   	 			{{ form_label(form.nomAuteurPost) }}
+   	 		</div>
+    		<div class="col-md-7">
+    			{{ form_widget(form.nomAuteurPost) }}
+    			{{ form_errors(form.nomAuteurPost) }}
+    		</div>
     	</div>
     	<div class="col-md-12">
-    		{{ form_label(form.titre) }}
-    		{{ form_widget(form.titre) }}
-    		{{ form_errors(form.titre) }}
+    		<div class="col-md-5">
+    			{{ form_label(form.titre) }}
+    		</div>
+    		<div class="col-md-7">
+    			{{ form_widget(form.titre) }}
+    			{{ form_errors(form.titre) }}
+    		</div>
     	</div>
     	<div class="col-md-12">
-   			{{ form_label(form.contenuPost) }}
-    		{{ form_widget(form.contenuPost) }}
-    		{{ form_errors(form.contenuPost) }}
+    		<div class="col-md-5">
+   				{{ form_label(form.contenuPost) }}
+   			</div>
+    		<div class="col-md-7">
+    			{{ form_widget(form.contenuPost) }}
+    			{{ form_errors(form.contenuPost) }}
+    		</div>
     	</div>
     	<div class="col-md-4"></div>
     </div>

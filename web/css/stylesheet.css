@@ -470,3 +470,11 @@ margin-bottom: 30px;
 	text-align: center;
 	color: #3d3d3d;
 }
+/* Post Page */
+.create-post {
+	background-color: #58c4b8;
+	border-radius: 5px;
+	border: solid #3d3d3d 1px;
+	text-align: center;
+
+}
