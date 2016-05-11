@@ -14,17 +14,29 @@ class DefaultController extends Controller
 
         $user = $this->container->get('security.context')->getToken()->getUser();
 
+        $tabsearch = [];
         $search = $request->request->get('recherche');
 
         if ($search == null) {
-                $searchresult = $em->getRepository('AppBundle:User')->findAll();
-            }
+            $searchresult = $em->getRepository('AppBundle:User')->findAll();
+        }
         else {
             $searchresult = $em->getRepository('AppBundle:User')->findByUsername($search);
-            }
+        }
+
+        foreach ($searchresult as $datasearch)
+        {
+            $thisGender = $em->getRepository('AppBundle:datauser')->findOneByIduser($datasearch->getId());
+            $tabsearch[] = array(
+                'gender' => $thisGender->getGenre(),
+                'username' => $datasearch->getUsername(),
+                'lastlogin' => $datasearch->getLastlogin(),
+                'id' => $datasearch->getId(),
+            );
+        }
 
         return $this->render('default/search.html.twig', array(
-            'search_result' => $searchresult,
+            'tabsearchs' => $tabsearch,
         ));
     }
 
